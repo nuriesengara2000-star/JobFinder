@@ -2,6 +2,17 @@
 
 JobFinder AI Agent is an autonomous AI job-search assistant that analyzes a user's resume, searches real vacancies from multiple sources, and returns relevant job opportunities with a clean web interface.
 
+
+## Live Demo
+
+Frontend: replace this with your Vercel URL after deployment  
+Backend API: https://jobfinder-production-739b.up.railway.app  
+API Docs: https://jobfinder-production-739b.up.railway.app/docs
+
+## Screenshot
+
+![JobFinder job results](docs/screenshots/job-results.png)
+
 ## Project Status
 
 Current version includes:
@@ -23,11 +34,10 @@ Current version includes:
 
 Planned next steps:
 
-- Railway backend deployment
-- Vercel frontend deployment
-- Demo video and presentation
-- Architecture diagram in `docs/architecture.png`
-- Pytest integration tests
+- User authentication
+- Persistent search history
+- PDF/DOCX resume upload from web UI
+- LangSmith observability
 
 ## Problem
 
@@ -82,7 +92,7 @@ This project uses an AI agent to:
 - OpenAI model: `gpt-4o-mini` by default
 - Custom tools for job search and resume parsing
 
-### Deployment Plan
+### Deployment
 
 - Backend: Railway
 - Frontend: Vercel
@@ -327,14 +337,12 @@ NEXT_PUBLIC_API_URL=https://your-railway-backend-url
 
 ## Roadmap
 
-- Deploy backend to Railway.
-- Deploy frontend to Vercel.
 - Add frontend session history persistence.
-- Add pytest tests for API and tools.
-- Add `docs/proposal.md` and `docs/architecture.png`.
-- Add observability and better error handling.
-- Add prompt injection protection.
+- Add PDF/DOCX upload directly from the web UI.
+- Add observability with LangSmith.
+- Add stronger prompt-injection protection.
 - Add job fit-score visualization.
+- Add PostgreSQL in production instead of SQLite.
 
 ## Capstone Requirements Coverage
 
@@ -342,7 +350,7 @@ NEXT_PUBLIC_API_URL=https://your-railway-backend-url
 |---|---|
 | Autonomous agent / multi-agent system | Done |
 | Minimum one custom tool | Done |
-| FastAPI production-ready API | Basic version added |
+| FastAPI production-ready API | Done |
 | Pydantic validation | Added |
 | Streaming response | Basic SSE added |
 | Logging | Added |
@@ -350,7 +358,11 @@ NEXT_PUBLIC_API_URL=https://your-railway-backend-url
 | React / Next.js frontend | Added |
 | Dockerfile | Added |
 | Docker Compose | Added |
-| Cloud deployment | Next step |
+| Tests | Added |
+| Proposal | Added: `docs/proposal.md` |
+| Architecture diagram | Added: `docs/architecture.png` |
+| Demo Day presentation | Added: `docs/JobFinder_Demo_Day_Presentation.pdf` |
+| Cloud deployment | Done: Railway backend + Vercel frontend |
 | README | Added |
 | `.env.example` | Added |
 
@@ -406,3 +418,28 @@ NEXT_PUBLIC_API_URL=https://your-railway-backend-domain
 ```
 
 Full deployment guide: `docs/DEPLOYMENT.md`.
+
+## Tests
+
+Run backend tests:
+
+```bash
+python -m pytest backend/tests -q
+```
+
+Current coverage includes:
+
+- root endpoint;
+- health endpoint;
+- chat validation;
+- job matching filter for irrelevant roles.
+
+## Final Submission Artifacts
+
+- Proposal: `docs/proposal.md`
+- Architecture diagram: `docs/architecture.png`
+- Presentation PDF: `docs/JobFinder_Demo_Day_Presentation.pdf`
+- Presentation PPTX: `docs/JobFinder_Demo_Day_Presentation.pptx`
+- Demo video slideshow: `docs/demo.mp4`
+- Demo recording script: `docs/demo_video_script.md`
+- Demo recording checklist: `docs/demo_recording_checklist.md`

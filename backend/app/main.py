@@ -25,5 +25,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+@app.get("/", tags=["root"])
+async def root() -> dict[str, str]:
+    """Public landing endpoint for Railway health checks and quick API discovery."""
+    return {
+        "name": "JobFinder AI Agent",
+        "status": "running",
+        "message": "Backend API is running successfully.",
+        "health": "/health",
+        "docs": "/docs",
+    }
+
+
 app.include_router(health_router)
 app.include_router(chat_router)
