@@ -11,7 +11,7 @@ Backend API: https://jobfinder-production-739b.up.railway.app
 
 API Docs: https://jobfinder-production-739b.up.railway.app/docs
 
-Demo-Video: 
+Demo-Video: https://youtu.be/n-03yVfZeJA
 
 ## Screenshots
 
