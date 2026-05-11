@@ -13,6 +13,8 @@ API Docs: https://jobfinder-production-739b.up.railway.app/docs
 
 Demo-Video: https://youtu.be/n-03yVfZeJA
 
+Presentation: https://github.com/nuriesengara2000-star/JobFinder/blob/main/docs/JobFinder_Demo_Day_Presentation.pdf
+
 ## Screenshots
 
 docs\screenshots
