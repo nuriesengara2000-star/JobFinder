@@ -6,7 +6,9 @@ JobFinder AI Agent is an autonomous AI job-search assistant that analyzes a user
 ## Live Demo
 
 Frontend: https://job-finder-lemon-ten.vercel.app
+
 Backend API: https://jobfinder-production-739b.up.railway.app  
+
 API Docs: https://jobfinder-production-739b.up.railway.app/docs
 
 ## Screenshot
