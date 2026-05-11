@@ -11,9 +11,11 @@ Backend API: https://jobfinder-production-739b.up.railway.app
 
 API Docs: https://jobfinder-production-739b.up.railway.app/docs
 
-## Screenshot
+Demo-Video: 
 
-![JobFinder job results](docs\screenshots\app.png)
+## Screenshots
+
+docs\screenshots
 
 ## Project Status
 
